@@ -60,7 +60,10 @@ public class OrderLessHeaderColumnNameMappingStrategy extends HeaderColumnNameMa
      *
      * @param headerToMap
      */
-    public void setHeaderToMap(HashMap<String, Integer> headerToMap) {
-        this.columnsToMap = headerToMap;
+    public void setHeaderToMap(String[] headerToMap) {
+        columnsToMap = new HashMap<String, Integer>();
+        for(String column : headerToMap) {
+            columnsToMap.put(column, null);
+        }
     }
 }

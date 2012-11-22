@@ -19,14 +19,8 @@ public class OpenCsvRun {
         // Map rows in CSV file to Person bean
         orderLessHeaderImpl.setType(Person.class);
 
-        // Create a HashMap of columns to be read
-        HashMap<String, Integer> columnsToMap = new HashMap<String, Integer>();
-
-        // Put the value as null. The values will be later filled
-        // when the original header from CSV file gets pulled.
-        columnsToMap.put("fname", null);
-        columnsToMap.put("telephone", null);
-        columnsToMap.put("id", null);
+        // Create an array of column names to be read
+        String[] columnsToMap = new String[] {"fname", "telephone", "id"};
 
         // Set the columns to be mapped
         orderLessHeaderImpl.setHeaderToMap(columnsToMap);

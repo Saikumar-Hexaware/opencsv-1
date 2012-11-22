@@ -11,17 +11,11 @@ Create an instance of ```OrderLessHeaderColumnNameMappingStrategy```
 OrderLessHeaderColumnNameMappingStrategy orderLessHeaderImpl = new OrderLessHeaderColumnNameMappingStrategy();
 ```
 
-Create a ```HashMap``` of columns you need to read from a CSV file
+Create a ```Array``` of columns you need to read from a CSV file
 
 ```
-// Key is the column name and Value is the column position in the header.
-// Value is determined automatically by OrderLessHeaderColumnNameMappingStrategy.
-HashMap<String, Integer> columnsToMap = new HashMap<String, Integer>();
-
-// Initially we put values as null. Order doesn't matter.
-columnsToMap.put("fname", null);
-columnsToMap.put("telephone", null);
-columnsToMap.put("id", null);
+// Create an array of column names to be read
+String[] columnsToMap = new String[] {"fname", "telephone", "id"};
 ```
 
 Set columns you want to read in the ```orderLessHeaderImpl``` instance
