@@ -23,7 +23,7 @@ public class OpenCsvRun {
         String[] columnsToMap = new String[] {"fname", "telephone", "id"};
 
         // Set the columns to be mapped
-        orderLessHeaderImpl.setHeaderToMap(columnsToMap);
+        orderLessHeaderImpl.setColumnsToMap(columnsToMap);
 
         CsvToBean csvToBean = new CsvToBean();
         List<Person> list = null;

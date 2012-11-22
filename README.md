@@ -22,7 +22,7 @@ Set columns you want to read in the ```orderLessHeaderImpl``` instance
 
 ```
 // Set the columns to be mapped
-orderLessHeaderImpl.setHeaderToMap(columnsToMap);
+orderLessHeaderImpl.setColumnsToMap(columnsToMap);
 ```
 
 You're all set. Now, execute the below code to read and parse your CSV file.
